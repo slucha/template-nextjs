@@ -30,7 +30,9 @@ export default function KontaktPage() {
               <Link href="/leistungen" className="text-[#1E1E1E] hover:text-[#00968F] font-body transition-colors">
                 Leistungen
               </Link>
-              <Button className="bg-[#F47C27] hover:bg-[#F47C27]/90 text-white font-body">Beratung anfragen</Button>
+              <Button className="bg-[#F47C27] hover:bg-[#F47C27]/90 text-white font-body">
+                <a href="mailto:info@zentrum-dizt.de">Beratung anfragen</a>
+              </Button>
             </nav>
           </div>
         </div>
@@ -81,11 +83,11 @@ export default function KontaktPage() {
                 <div className="space-y-3 font-body text-gray-700">
                   <div>
                     <p className="font-semibold">Telefon</p>
-                    <p>+49 (0) 30 1234 5678</p>
+                    <p>+49 176 93047429</p>
                   </div>
                   <div>
                     <p className="font-semibold">E-Mail</p>
-                    <p>info@dizt.de</p>
+                    <p>info@zentrum-dizt.de</p>
                   </div>
                 </div>
               </CardContent>
@@ -179,7 +181,7 @@ export default function KontaktPage() {
                       <input
                         type="tel"
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00968F] focus:border-transparent font-body"
-                        placeholder="+49 (0) 123 456789"
+                        placeholder="+49 176 93047429"
                       />
                     </div>
                   </div>
@@ -284,11 +286,11 @@ export default function KontaktPage() {
               <CardContent className="space-y-3">
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-[#00968F]" />
-                  <span className="font-body text-gray-600">m.fischer@dizt.de</span>
+                  <span className="font-body text-gray-600">m.fischer@zentrum-dizt.de</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-[#00968F]" />
-                  <span className="font-body text-gray-600">+49 (0) 30 1234 5671</span>
+                  <span className="font-body text-gray-600">+49 176 93047429</span>
                 </div>
                 <div className="flex gap-1 mt-2">
                   <Badge variant="secondary" className="bg-[#00968F]/10 text-[#00968F]">Strategie</Badge>
@@ -312,11 +314,11 @@ export default function KontaktPage() {
               <CardContent className="space-y-3">
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-[#00968F]" />
-                  <span className="font-body text-gray-600">j.marciniak@dizt.de</span>
+                  <span className="font-body text-gray-600">j.marciniak@zentrum-dizt.de</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-[#00968F]" />
-                  <span className="font-body text-gray-600">+49 (0) 30 1234 5672</span>
+                  <span className="font-body text-gray-600">+49 176 93047429</span>
                 </div>
                 <div className="flex gap-1 mt-2">
                   <Badge variant="secondary" className="bg-[#A5E53D]/10 text-[#A5E53D]">Programme</Badge>
@@ -340,11 +342,11 @@ export default function KontaktPage() {
               <CardContent className="space-y-3">
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-[#00968F]" />
-                  <span className="font-body text-gray-600">t.klein@dizt.de</span>
+                  <span className="font-body text-gray-600">t.klein@zentrum-dizt.de</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-[#00968F]" />
-                  <span className="font-body text-gray-600">+49 (0) 30 1234 5673</span>
+                  <span className="font-body text-gray-600">+49 176 93047429</span>
                 </div>
                 <div className="flex gap-1 mt-2">
                   <Badge variant="secondary" className="bg-[#00968F]/10 text-[#00968F]">Digital</Badge>
@@ -428,8 +430,10 @@ export default function KontaktPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-[#F47C27] hover:bg-[#F47C27]/90 text-white font-body">
-                Termin vereinbaren
-                <Phone className="ml-2 h-5 w-5" />
+                <a href="mailto:info@zentrum-dizt.de" className="flex items-center">
+                  Termin vereinbaren
+                  <Phone className="ml-2 h-5 w-5" />
+                </a>
               </Button>
               <Link href="/">
                 <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-[#00968F] font-body">
@@ -444,17 +448,81 @@ export default function KontaktPage() {
       {/* Footer */}
       <footer className="bg-[#1E1E1E] text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="text-center">
-            <div className="flex justify-center items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-[#00968F] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">Z</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold font-headlines">DIZT</h3>
-                <p className="text-sm text-gray-400 font-body">Zentrum für Deutsche Innovation</p>
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-10 h-10 bg-[#00968F] rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold">Z</span>
+                </div>
+                <div>
+                  <h3 className="font-bold font-headlines">DIZT</h3>
+                  <p className="text-sm text-gray-400 font-body">Wo Zukunft Gestalt annimmt.</p>
+                </div>
               </div>
             </div>
-            <p className="text-gray-400 font-body">© 2024 DIZT. Wissenschaftlich fundiert. Zukunftsorientiert. Praxisnah.</p>
+
+            <div>
+              <h4 className="font-bold mb-4 font-headlines">Navigation</h4>
+              <ul className="space-y-2 font-body">
+                <li>
+                  <Link href="/" className="text-gray-400 hover:text-white transition-colors">
+                    Startseite
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/ueber-uns" className="text-gray-400 hover:text-white transition-colors">
+                    Über uns
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/leistungen" className="text-gray-400 hover:text-white transition-colors">
+                    Leistungen
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/kontakt" className="text-gray-400 hover:text-white transition-colors">
+                    Kontakt
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold mb-4 font-headlines">Kontakt</h4>
+              <ul className="space-y-2 text-gray-400 font-body">
+                <li>info@zentrum-dizt.de</li>
+                <li>+49 176 93047429</li>
+                <li>zentrum-dizt.de</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold mb-4 font-headlines">Rechtliches</h4>
+              <ul className="space-y-2 font-body">
+                <li>
+                  <Link href="/impressum" className="text-gray-400 hover:text-white transition-colors">
+                    Impressum
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/datenschutz" className="text-gray-400 hover:text-white transition-colors">
+                    Datenschutz
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/agb" className="text-gray-400 hover:text-white transition-colors">
+                    AGB
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+            <p className="text-gray-400 font-body">
+              © {new Date().getFullYear()} Zentrum für Deutsche Innovation, Zukunft und Transformation. Alle Rechte
+              vorbehalten.
+            </p>
           </div>
         </div>
       </footer>

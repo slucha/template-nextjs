@@ -30,7 +30,9 @@ export default function HomePage() {
               <Link href="/kontakt" className="text-[#1E1E1E] hover:text-[#00968F] font-body transition-colors">
                 Kontakt
               </Link>
-              <Button className="bg-[#F47C27] hover:bg-[#F47C27]/90 text-white font-body">Beratung anfragen</Button>
+              <Button className="bg-[#F47C27] hover:bg-[#F47C27]/90 text-white font-body">
+                <a href="mailto:info@zentrum-dizt.de">Beratung anfragen</a>
+              </Button>
             </nav>
           </div>
         </div>
@@ -47,15 +49,17 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-[#F47C27] hover:bg-[#F47C27]/90 text-white font-body">
-                Jetzt entdecken
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <a href="mailto:info@zentrum-dizt.de" className="flex items-center">
+                  Jetzt entdecken
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-[#00968F] bg-transparent font-body"
               >
-                Mehr erfahren
+                <a href="mailto:info@zentrum-dizt.de">Mehr erfahren</a>
               </Button>
             </div>
           </div>
@@ -263,8 +267,10 @@ export default function HomePage() {
             Beratungsgespräch.
           </p>
           <Button size="lg" className="bg-[#F47C27] hover:bg-[#F47C27]/90 text-white font-body">
-            Jetzt Beratung anfragen
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <a href="mailto:info@zentrum-dizt.de" className="flex items-center">
+              Jetzt Beratung anfragen
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
           </Button>
         </div>
       </section>
@@ -285,7 +291,7 @@ export default function HomePage() {
                 <Mail className="h-8 w-8 text-[#00968F]" />
               </div>
               <h3 className="text-lg font-bold text-[#1E1E1E] mb-2 font-headlines">E-Mail</h3>
-              <p className="text-gray-600 font-body">kontakt@zentrum-dizt.de</p>
+              <p className="text-gray-600 font-body">info@zentrum-dizt.de</p>
             </div>
 
             <div className="text-center">
@@ -293,7 +299,7 @@ export default function HomePage() {
                 <Phone className="h-8 w-8 text-[#F47C27]" />
               </div>
               <h3 className="text-lg font-bold text-[#1E1E1E] mb-2 font-headlines">Telefon</h3>
-              <p className="text-gray-600 font-body">+49 (0) 123 456 789</p>
+              <p className="text-gray-600 font-body">+49 176 93047429</p>
             </div>
 
             <div className="text-center">
@@ -327,22 +333,22 @@ export default function HomePage() {
               <h4 className="font-bold mb-4 font-headlines">Navigation</h4>
               <ul className="space-y-2 font-body">
                 <li>
-                  <Link href="#ueber-uns" className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="/" className="text-gray-400 hover:text-white transition-colors">
+                    Startseite
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/ueber-uns" className="text-gray-400 hover:text-white transition-colors">
                     Über uns
                   </Link>
                 </li>
                 <li>
-                  <Link href="#leistungen" className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="/leistungen" className="text-gray-400 hover:text-white transition-colors">
                     Leistungen
                   </Link>
                 </li>
                 <li>
-                  <Link href="#zielgruppen" className="text-gray-400 hover:text-white transition-colors">
-                    Zielgruppen
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#kontakt" className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="/kontakt" className="text-gray-400 hover:text-white transition-colors">
                     Kontakt
                   </Link>
                 </li>
@@ -352,8 +358,8 @@ export default function HomePage() {
             <div>
               <h4 className="font-bold mb-4 font-headlines">Kontakt</h4>
               <ul className="space-y-2 text-gray-400 font-body">
-                <li>kontakt@zentrum-dizt.de</li>
-                <li>+49 (0) 123 456 789</li>
+                <li>info@zentrum-dizt.de</li>
+                <li>+49 176 93047429</li>
                 <li>zentrum-dizt.de</li>
               </ul>
             </div>
@@ -362,17 +368,17 @@ export default function HomePage() {
               <h4 className="font-bold mb-4 font-headlines">Rechtliches</h4>
               <ul className="space-y-2 font-body">
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="/impressum" className="text-gray-400 hover:text-white transition-colors">
                     Impressum
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="/datenschutz" className="text-gray-400 hover:text-white transition-colors">
                     Datenschutz
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="/agb" className="text-gray-400 hover:text-white transition-colors">
                     AGB
                   </Link>
                 </li>
