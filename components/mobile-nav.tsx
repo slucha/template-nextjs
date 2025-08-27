@@ -39,12 +39,12 @@ export function MobileNav({ className }: { className?: string }) {
 			{open ? (
 				<>
 					<div
-						className="fixed inset-0 z-40 bg-black/50"
+						className="fixed inset-0 z-40 bg-white"
 						role="presentation"
 						onClick={() => setOpen(false)}
 					/>
 					<div
-						className="fixed left-0 top-0 z-50 h-full w-80 max-w-[85vw] bg-background shadow-lg outline-none focus:outline-none"
+						className="fixed left-0 top-0 z-50 h-full w-80 max-w-[85vw] bg-white shadow-lg outline-none focus:outline-none"
 						role="dialog"
 						aria-modal="true"
 					>
