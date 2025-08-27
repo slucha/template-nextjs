@@ -44,7 +44,7 @@ export function MobileNav({ className }: { className?: string }) {
 						onClick={() => setOpen(false)}
 					/>
 					<div
-						className="fixed left-0 top-0 z-50 h-full w-80 max-w-[85vw] bg-background shadow-lg outline-none focus:outline-none"
+						className="fixed left-0 top-0 z-50 h-full w-80 max-w-[85vw] bg-white shadow-lg outline-none focus:outline-none"
 						role="dialog"
 						aria-modal="true"
 					>

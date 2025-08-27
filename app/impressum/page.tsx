@@ -6,36 +6,7 @@ import Link from "next/link"
 export default function ImpressumPage() {
   return (
     <div className="min-h-screen bg-[#F5F7FA]">
-      {/* Header */}
-      <header className="bg-white shadow-sm border-b">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-              <div className="w-12 h-12 bg-[#00968F] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">Z</span>
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-[#1E1E1E] font-headlines">DIZT</h1>
-                <p className="text-xs text-gray-600 font-body">Zentrum für Deutsche Innovation</p>
-              </div>
-            </Link>
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link href="/" className="text-[#1E1E1E] hover:text-[#00968F] font-body transition-colors">
-                Startseite
-              </Link>
-              <Link href="/ueber-uns" className="text-[#1E1E1E] hover:text-[#00968F] font-body transition-colors">
-                Über uns
-              </Link>
-              <Link href="/leistungen" className="text-[#1E1E1E] hover:text-[#00968F] font-body transition-colors">
-                Leistungen
-              </Link>
-              <Link href="/kontakt" className="text-[#1E1E1E] hover:text-[#00968F] font-body transition-colors">
-                Kontakt
-              </Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+
 
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-[#00968F] to-[#00968F]/80">
