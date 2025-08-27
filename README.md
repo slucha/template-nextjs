@@ -1,19 +1,19 @@
-# A Nextjs starter template on Gitpod
+# DIZT – Zentrum für Deutsche Innovation, Zukunft und Transformation
 
-This is a [Learn Next.js](https://nextjs.org/learn) template configured for ephemeral cloud development environments on [Gitpod](https://www.gitpod.io/).
+Dieses Repository enthält die Website des Zentrums für Deutsche Innovation, Zukunft und Transformation (DIZT).
 
-## Next Steps
+## Entwicklung
 
-Click the button below to start a new development environment:
+- Entwicklung starten: `npm run dev`
+- Produktion bauen: `npm run build`
+- Produktion starten: `npm run start`
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/template-nextjs)
+## Tech-Stack
 
-## Get Started With Your Own Project
+- Next.js 15, React 19
+- TypeScript
+- Tailwind CSS
 
-### A new project
+## Lizenz
 
-Click the above "Open in Gitpod" button to start a new workspace. Once you're ready to push your first code changes, Gitpod will guide you to fork this project so you own it.
-
-### An existing project
-
-To get started with Next.js on Gitpod, add a [`.gitpod.yml`](./.gitpod.yml) file which contains the configuration to improve the developer experience on Gitpod. To learn more, please see the [Getting Started](https://www.gitpod.io/docs/getting-started) documentation.
+Alle Rechte vorbehalten.
