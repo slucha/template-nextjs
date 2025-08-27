@@ -39,7 +39,7 @@ export function MobileNav({ className }: { className?: string }) {
 			{open ? (
 				<>
 					<div
-						className="fixed inset-0 z-40 bg-black/50"
+						className="fixed inset-0 z-40 bg-white"
 						role="presentation"
 						onClick={() => setOpen(false)}
 					/>
