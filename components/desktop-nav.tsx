@@ -5,7 +5,10 @@ import { cn } from '@/lib/utils'
 export function DesktopNav({ className }: { className?: string }) {
 	return (
 		<nav className={cn('hidden md:flex items-center gap-x-6', className)}>
-			{NAV_LINKS.map((link: NavLink) => (
+			{NAV_LINKS.filter((link: NavLink) => {
+				const lower = link.label.toLowerCase()
+				return lower !== 'impressum' && lower !== 'datenschutz' && lower !== 'agb'
+			}).map((link: NavLink) => (
 				<Link
 					key={link.href}
 					href={link.href}
